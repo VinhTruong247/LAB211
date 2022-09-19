@@ -84,10 +84,6 @@ public class LogIn {
             int choice = 0;
             do {
                 choice = menu.getChoice("Managing dealers");
-                if (getChoice.isEmpty()){
-                    System.out.println("Input must not be empty, try again");
-                }
-                else{
                 switch (choice) {
                     case 1:
                         dList.addDealer();
@@ -121,8 +117,7 @@ public class LogIn {
                             }
                         }
                 }
-            } while (choice > 0 && choice <= menu.size()&&!choice.isEmpty());
-            }
+            } while (choice > 0 && choice <= menu.size());
             System.out.println("Bye.");
         }
     }
